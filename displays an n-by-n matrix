@@ -1,0 +1,26 @@
+//Write a method that displays an n-by-n matrix.
+
+import java.util.*;
+public class PrintMatrix {
+    public static void main(String[] args) { //main method
+        Scanner input = new Scanner(System.in); //scanner class
+        System.out.println("Enter n: "); //prompt user to enter value
+        int num = input.nextInt();
+        printMatrix(num);
+    }
+
+    public static void printMatrix(int num) {  //void method
+
+        //Outer loop for printing rows
+        for (int i = num; i > 0; i--) {
+            //Inner loop for printing columns
+            for (int j = num; j > 0; j--) {
+                //Random function for generating 0's and 1's
+                System.out.print((int) (Math.random() * 2) + " ");
+            }
+            System.out.println();
+
+        }
+
+    }
+}
