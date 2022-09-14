@@ -1,0 +1,42 @@
+//Program that has  a method that returns a number. The program translates a letter (uppercase or lowercase) to a digit and leaves all other letters intact
+
+import java.util.Scanner;
+public class NumberMappingForTelephone {
+    public static void main(String[] args) {  //main method
+        Scanner tm = new Scanner(System.in); // Create a Scanner
+
+        // Prompting the user to enter a phone number as a string
+        System.out.print("Enter a string: ");
+        String inputstring = tm.nextLine();
+
+        // getting the number for the characters and writing remaining values as it is
+        for (int i = 0; i < inputstring.length(); i++) {
+            if (Character.isLetter(inputstring.charAt(i)))
+                System.out.print(getNumber(Character.toUpperCase(inputstring.charAt(i))));
+            else
+                System.out.print(inputstring.charAt(i));
+        }
+        System.out.println();
+    }
+
+    // Method getNumber returns a number, given an uppercase letter
+    public static int getNumber(char uppercaseLetter) {    //method getNumber
+        // Return the character's number reference in the international telephone mapping
+        if (uppercaseLetter >= 'W')
+            return 9;
+        else if (uppercaseLetter >= 'T')
+            return 8;
+        else if (uppercaseLetter >= 'P')
+            return 7;
+        else if (uppercaseLetter >= 'M')
+            return 6;
+        else if (uppercaseLetter >= 'J')
+            return 5;
+        else if (uppercaseLetter >= 'G')
+            return 4;
+        else if (uppercaseLetter >= 'D')
+            return 3;
+        else
+            return 2;
+    }
+}
