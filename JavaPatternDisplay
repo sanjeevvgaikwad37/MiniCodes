@@ -1,0 +1,18 @@
+/**2.  Write a program that displays the
+ following pattern as shown in the text:
+   J   A V   V  A
+   J  A A V V  A A
+ J J AAAAA VV AAAAA
+ J J A   A V  A    A
+ *
+ */
+
+public class JavaPatternDisplay {                                   //class
+    public static void main(String []args){                 // main method
+        //pattern output display
+        System.out.println("   J" + "    A" + "     V    V" + "   A");
+        System.out.println("   J" + "   A A" + "     V  V" + "   A A");
+        System.out.println("J  J" + "  AAAAA" + "     VV" + "   AAAAA");
+        System.out.println("J  J" + " A     A" + "    V" + "   A     A");
+    }
+}
