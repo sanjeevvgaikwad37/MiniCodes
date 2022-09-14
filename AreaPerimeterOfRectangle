@@ -1,0 +1,36 @@
+/**4. (Area and perimeter of a rectangle)
+ *  Write a program that prompts and reads user input for the width and height of a rectangle.
+ *  You program will calculate and display the area and perimeter of the rectangle.
+ *  The values for width and height should be treated a a number with a decimal point.
+ *  Area and perimeter are calculated as shown below.
+ *  area = width × height perimeter = (2 x width) + (2 x height)
+ *  The output from running the program with a width of 5.5 and height of 2.2 will be:
+ *  Please enter the width: 5.5 Please enter the height: 2.2
+ (you will likely have more to the right of the decimal point, and that is ok.)
+ Area is 12.100000
+ Perimeter is 15.4
+ *
+ */
+
+import java.util.Scanner;                                 //scanner is in the java.util package
+public class AreaPerimeterOfRectangle {
+    public static void main(String[] args) {
+        //creating a scanner object
+        Scanner input = new Scanner(System.in);
+        //prompt user to enter width and height
+        System.out.println("Enter the width of rectangle : ");
+        double width = input.nextDouble();
+        System.out.println("Enter the height of rectangle : ");
+        double height = input.nextDouble();
+
+        //Compute area
+        double area = width * height;
+        //Compute perimeter
+        double perimeter = ((2 * width) + (2 * height));
+
+        //Display result
+        System.out.println("For the given rectangle the area is : " + area +  " and the perimeter is : " + perimeter);
+
+
+    }
+}
