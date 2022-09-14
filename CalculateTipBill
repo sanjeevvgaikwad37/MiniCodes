@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+/** You are in a job where you earn a tip for service.
+ * You need a program that will calculate how much to add to the bill after calculating gratuity.
+ * Your program will read the subtotal and the gratuity rate from the user, computes the gratuity and total and displays the results to the user.
+ * For example, if the user enters 10 for subtotal and 15 for gratuity rate, the program displays $1.5 for gratuity and $11.5 as total.
+ * Don’t worry that the format of the output is “$X.X” rather than “$X.XX”.
+ * To calculate a tip, calculate subtotal * rate / 100 To calculate the total bill, use the above calculation and add to the subtotal. Sample run: Enter the subtotal or the bill 10 Enter the gratuity rate 15 The amount for gratuity is $1.5 The total final bill is $11.5
+ *
+ */
+
+
+public class CalculateTipBill {                      //class
+    public static void main(String []args){              //main method
+
+       //creating a scanner class
+        Scanner input = new Scanner(System.in);
+    // prompt the user to enter subtotal and gratuity
+        System.out.println("Enter the subtotal or the bill : ");
+        double subtotal = input.nextDouble();
+
+        System.out.println("Enter the gratuity rate  : ");
+        double gratuity = input.nextDouble();
+
+        //Calculate tip
+        double tip = (subtotal * gratuity) / 100;
+        //calculate final bill
+        double finalBill = subtotal + tip;
+
+        // display result
+        System.out.println("The amount for gratuity is $"+tip);
+        System.out.println("The total final bill is $"+finalBill);
+
+
+    }
+}
