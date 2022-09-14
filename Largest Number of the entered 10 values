@@ -1,0 +1,22 @@
+
+import java.util.Scanner;
+
+public class Q5_LargestNumber {
+   
+    public static void main(String[] args) {
+        int count = 1;
+        int largest = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter 10 values: ");
+        input.nextInt();
+
+        for(; count < 10; ++count) {
+            int number = input.nextInt();
+            if (largest < number) {
+                largest = number;
+            }
+        }
+
+        System.out.println("The largest value is " + largest);
+    }
+}
