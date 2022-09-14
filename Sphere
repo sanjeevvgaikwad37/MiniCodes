@@ -1,0 +1,27 @@
+//Computing area and volume of the sphere.
+
+
+import java.util.Scanner;       //scanner is in the java.util package
+
+public class Sphere {
+    public static void main(String[] args){
+final double PI = 3.14159;                      //declaring a constant
+
+        //Create a Scanner object
+        Scanner input = new Scanner(System.in);
+
+        //prompt user to enter a radius
+        System.out.println("Enter a value for radius : ");
+        double radius = input.nextDouble();
+
+        //Compute area
+        double area = 4 * PI * radius * radius;
+        //Computer volume
+        double volume = ( (4 * PI * (Math.pow(radius , 3)) / 3));
+
+        //Display result
+        System.out.println("The Area of the Sphere is : "+area);
+        System.out.println("The Volume of the Sphere is : "+volume);
+
+    }
+}
