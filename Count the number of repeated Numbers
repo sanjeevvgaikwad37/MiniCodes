@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Q6_CountTheNumberOfNumbers {
+public class CountTheNumberOfNumbers {
       public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int count1 = 0;
