@@ -1,0 +1,23 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+import java.util.Scanner;
+
+public class MultiplicationTableForLoop {
+    public MultiplicationTableForLoop() {
+    }
+
+    public static void main(String[] args) {
+        System.out.print("Please enter a number: ");
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        System.out.println("Multiplication table for " + num + "\nMultiplier     Result\n---------------------");
+
+        for(int i = 1; i <= 10; ++i) {
+            System.out.println("" + i + "              " + num * i);
+        }
+
+    }
+}
